@@ -397,7 +397,7 @@ class modExtraPackage
     protected function chunks()
     {
         /** @noinspection PhpIncludeInspection */
-        $chunks = include($this->config['elements'] . 'chunks.php');
+        $chunks = include($this->config['elements'] . '_chunks.php');
         if (!is_array($chunks)) {
             $this->modx->log(modX::LOG_LEVEL_ERROR, 'Could not package in Chunks');
 
